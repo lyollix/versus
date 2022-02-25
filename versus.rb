@@ -50,7 +50,7 @@ d.sort_by! {|x| x[3]}
 d.reverse!
 
 rows = []
-for x in d[0..4] do
+for x in d[0..arg['top-bad-word']] do
     b = Russian.p(x[1], "баттл", "баттла", "баттлов")
     r = Russian.p(x[2], "раунд", "раунда", "раундов")
     w = Russian.p(x[3], "нецензурное слово", "нецензурных слова", "нецензурных слов")
